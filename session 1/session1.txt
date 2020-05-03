@@ -1,0 +1,99 @@
+a. assign int, float, str, boolean values to different variables
+>>> var1=4
+>>> var2=7.8
+>>> var3="surya"
+>>> var4=True
+b.Print current values of these variables by typing the name of the variables
+>>> var1
+4
+>>> var2
+7.8
+>>> var3
+'surya'
+>>> var4
+True
+c.Print current values of these variables by typing the name of the variables by using the print function  [ Example: print(name) ]
+>>> print(var1)
+4
+>>> print(var2)
+7.8
+>>> print(var3)
+surya
+>>> print(var4)
+True
+
+d.Change the value stored in these variables by assigning new values
+>>> var1=3
+>>> var2=6.7
+>>> var3="python"
+>>>var4=False
+e.Print the data types of each of these variables by using the function type [ Example : type(name) ] 
+>>> type(var1)
+<class 'int'>
+>>> type(var2)
+<class 'float'>
+>>> type(var3)
+<class 'str'>
+>>> type(var4)
+<class 'bool'>
+
+f.Assign values of different data types to the existing variables and see how the type of the variable changes by using the type function
+>>> a = int("5") 
+>>> print(a)
+5
+>>> print(type(a))
+<class 'int'>
+>>> b = float("5") 
+>>> print(b)
+5.0
+>>> print(type(b))
+<class 'float'>
+>>> c = str("5")
+>>> print(type(c))
+<class 'str'>
+>>> d=bool("True")
+>>> type(d)
+<class 'bool'>
+
+h.assign the value by computing it from the variables length and breadth. Verify the value of area by printing its current value
+>>> lenght=30
+>>> breath=20
+>>> area=lenght*breath
+>>> print(area)
+600
+
+i.Print the values of 7 / 2 and 4 / 2 on the console and see the data type of the result
+>>> s=7/4
+>>> r=4/2
+>>> type(s)
+<class 'float'>
+>>> type(r)
+<class 'float'>
+j.Examine the use of various arithmetical expressions on the console and the rules of precedence :  + - * / %
+>>> 5+8
+13
+>>> 6-4
+2
+>>> 5*7
+35
+>>> 6/3
+2.0
+k.Prompt the user to enter his name and print the name back
+>>> name=input('what is your name:')
+what is your name:surya
+>>> print(name)
+surya
+l.Prompt the user to enter his salary and print the same back
+>>> salary=input('what is your salary: ')
+what is your salary: 2000
+>>> print(salary)
+2000
+
+
+
+
+
+
+
+
+

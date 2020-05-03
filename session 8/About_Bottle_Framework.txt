@@ -1,0 +1,102 @@
+﻿Questin - 6
+                                    
+
+					Bottle (Python Web Framework)
+
+
+
+
+
+
+Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a 
+single file module and has no dependencies other than the Python Standard Library.
+
+
+
+
+INSTALLATION :
+______________
+
+
+
+-->In terminal go to created virtual environment and activate it.
+
+-->To activate virtual environment (source bin/activate)
+pip install bottle 
+
+
+
+Example :
+_________
+
+
+
+# index.py in a bottle
+
+
+
+# import required things
+
+from bottle import route, run, template
+
+
+
+@route('/home/')
+
+def index():
+    
+    return template('<b>Welcome to our website home page</b>')
+
+
+
+run(host='localhost', port=8000, debug = True, reloader = True)
+
+
+
+
+
+Code explanation :
+__________________
+
+route() : 
+
+
+-->The "Debug mode"( optional parameter) is very helpful during early development.
+
+-->The "reloader"( optional parameter) its very useful to reload the browser when we change any code.
+
+--> The route() decorator binds a piece of code to an url path. We can define as many routes as we want.
+
+--> When ever a browser requests a URL, the associated function is called and return the value is sent back to the browser.
+
+
+
+
+template() :
+
+
+-->Bottle comes with a fast and powerful build-in template engine called SimpleTemplateEngine.
+
+-->To render a template we can use the template() function or the view()decorator.
+
+
+
+
+run() :
+
+       
+-->The run in last line starts a build-in development server. 
+
+-->Its runs on localhost post port 8000 and servesrequests until we hit Control-c in terminal.
+
+
+
+
+
+Run the code :
+
+______________
+
+-->Run the script in terminal then point your browser to http://localhost:8080/home/ That’s it.
+-->To stop running hit Control-c in terminal. 
+

@@ -1,0 +1,110 @@
+
+Question-6
+
+Create a Python Virtual Environment and install the following packages in it using pip:
+requests
+Pillow
+BeautifulSoup
+
+
+1. Making direcory envs
+-------------------------
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6$ mkdir envs
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6$ cd envs
+
+2. Creating virtualenv
+------------------------
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs$ virtualenv -p python3 session6_env
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /home/indhu/Downloads/Indhu/Indhu_session_6/envs/session6_env/bin/python3
+Also creating executable in /home/indhu/Downloads/Indhu/Indhu_session_6/envs/session6_env/bin/python
+Installing setuptools, pkg_resources, pip, wheel...
+done.
+
+3. Entering into the bin folder and listing the all files the bin folder
+-------------------------------------------------------------------------
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs$ cd session6_env
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ ls
+bin  include  lib  share
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ cd bin
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env/bin$ ls
+activate  activate.csh  activate.fish  activate_this.py  easy_install  easy_install-3.6  pip  pip3  pip3.6  python  python3  python3.6  python-config  wheel
+
+4. Entering into created virtualenv
+------------------------------------
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env/bin$ cd ..
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ ls
+bin  include  lib  share
+
+
+4. Activating the created virtualenv
+-------------------------------------
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ pwd /home/indhu/Downloads/Indhu/Indhu_session_6/envs/session6_env
+/home/indhu/Downloads/Indhu/Indhu_session_6/envs/session6_env
+
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ source bin/activate
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$
+
+
+5. Installing "requests" package using pip
+----------------------------------------
+
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$ pip install requests
+Collecting requests
+  Using cached requests-2.23.0-py2.py3-none-any.whl (58 kB)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Using cached urllib3-1.25.9-py2.py3-none-any.whl (126 kB)
+Collecting idna<3,>=2.5
+  Using cached idna-2.9-py2.py3-none-any.whl (58 kB)
+Collecting chardet<4,>=3.0.2
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Installing collected packages: certifi, urllib3, idna, chardet, requests
+Successfully installed certifi-2020.4.5.1 chardet-3.0.4 idna-2.9 requests-2.23.0 urllib3-1.25.9
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$
+
+
+6. Installing "Pillow" package using pip
+----------------------------------------
+
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$ pip install Pillow
+Collecting Pillow
+  Using cached Pillow-7.1.2-cp36-cp36m-manylinux1_x86_64.whl (2.1 MB)
+Installing collected packages: Pillow
+Successfully installed Pillow-7.1.2
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$
+
+7. Installing "beautifulSoup4" package using pip
+------------------------------------------------
+
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$ pip install beautifulSoup4
+Collecting beautifulSoup4
+  Using cached beautifulsoup4-4.9.0-py3-none-any.whl (109 kB)
+Collecting soupsieve>1.2
+  Using cached soupsieve-2.0-py2.py3-none-any.whl (32 kB)
+Installing collected packages: soupsieve, beautifulSoup4
+Successfully installed beautifulSoup4-4.9.0 soupsieve-2.0
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/env/session6_env$
+
+
+
+8. Deactivating the created virtualenv
+---------------------------------------
+(session6_env) indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ deactivate
+indhu@indhu-LG:~/Downloads/Indhu/Indhu_session_6/envs/session6_env$ 
+
+
+
+
+
+
+
+
+
